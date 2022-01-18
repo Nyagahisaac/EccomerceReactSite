@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+.dashboard{
+    width: 100%;
+    height: 50px;
+    background-color:white;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.dashboardWrapper{
+    height: 100%;
+    padding: 5px 20px;
+    display:flex;
+    justify-content: space-between;
+    
+}
+.logo{
+    font-weight: bold;
+    font-size: 30px;
+    color: darkblue;
+    cursor: pointer;
+}
+.topbarIconContainer{
+    position: relative;
+    cursor: pointer;
+}
+.topright{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    color: #555;
+}
+.topIconBadge{
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    top: -5px;
+    right: 0px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.sidebar{
+    flex:1;
+    height: calc(100vh - 50px);
+    position: sticky;
+    top: 50px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+.others{
+    height: 100vh;
+    background-color: rgb(252, 252, 252);
+    width: 100%;
+}
+.sidebarWrapper{
+    padding: 20px;
+    color: #555;
+
+}
+.sidebarTitle{
+    padding: 10px;
+    font-size: 18px;
+    color: rgb(187, 186, 186);
+}
+.sidebarList{
+    list-style: none;
+    padding: 5px;
+}
+.sidebarListItem{
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    
+}
+.sidebarListItem.active,
+.sidebarListItem:hover{
+    background-color: rgb(240, 240, 255);
+}
+.sidebarIcon{
+    margin-right: 5px;
+    font-size: 20px !important;
+}
+.sidebarMenu{
+    margin-bottom: 10px;
+}
+
+/* Feature Info Styling */
+.featured {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .featuredItem {
+    flex: 1;
+    margin: 0px 20px;
+    padding: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  }
+  
+  .featuredTitle{
+      font-size: 20px;
+  }
+  
+  .featuredMoneyContainer{
+      margin: 10px 0px;
+      display: flex;
+      align-items: center;
+  }
+  
+  .featuredMoney{
+      font-size: 30px;
+      font-weight: 600;
+  }
+  
+  .featuredMoneyRate{
+      display: flex;
+      align-items: center;
+      margin-left: 20px;
+  }
+  
+  .featuredIcon{
+      font-size: 14px;
+      margin-left: 5px;
+      color: green;
+  }
+  
+  .featuredIcon.negative{
+      color: red;
+  }
+  
+  .featuredSub{
+      font-size: 15px;
+      color: gray;
+  }
+
+  /* Chart styling */
+  .chart{
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    margin: 20px;
+    padding: 20px;
+    
+  }
+  .chartTitle{
+      font-weight: bolder;
+      font-family: 'Open Sans', serif;
+  }
+
+  /* widgetSm styling */
+  .homeWidgets{
+    display: flex;
+    margin: 20px;
+}
+  .widgetSm{
+    flex: 1;
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.widgetSmTitle{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.widgetSmImg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.widgetSmList{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+
+}
+
+.widgetSmListItem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+
+.widgetSmUser{
+    display: flex;
+    flex-direction: column;
+}
+
+.widgetSmUsername{
+    font-weight: 600;
+}
+
+.widgetSmUserTitle{
+    font-weight: 300;
+}
+
+.widgetSmButton{
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    padding: 7px 10px;
+    background-color: #eeeef7;
+    color: #555;
+    cursor: pointer;
+}
+
+.widgetSmIcon{
+    font-size: 16px !important;
+    margin-right: 5px;
+}
+
+/* Userlist styling */
+.userList {
+    flex: 4;
+}
+
+.userListUser {
+display: flex;
+align-items: center;
+}
+
+.userListImg {
+width: 32px;
+height: 32px;
+border-radius: 50%;
+object-fit: cover;
+margin-right: 10px;
+}
+
+.userListEdit{
+border: none;
+border-radius: 10px;
+padding: 5px 10px;
+background-color: #3bb077;
+color: white;
+cursor: pointer;
+margin-right: 20px;
+}
+
+.userListDelete{
+color: red;
+cursor: pointer;
+}
+.sk-circle {
+margin: 100px auto;
+width: 40px;
+height: 40px;
+position: relative;
+}
+.sk-circle .sk-child {
+width: 100%;
+height: 100%;
+position: absolute;
+left: 0;
+top: 0;
+}
+.sk-circle .sk-child:before {
+content: '';
+display: block;
+margin: 0 auto;
+width: 15%;
+height: 15%;
+background-color: #333;
+border-radius: 100%;
+-webkit-animation: sk-circleBounceDelay 1.2s infinite ease-in-out both;
+        animation: sk-circleBounceDelay 1.2s infinite ease-in-out both;
+}
+.sk-circle .sk-circle2 {
+-webkit-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+        transform: rotate(30deg); }
+.sk-circle .sk-circle3 {
+-webkit-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+        transform: rotate(60deg); }
+.sk-circle .sk-circle4 {
+-webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+        transform: rotate(90deg); }
+.sk-circle .sk-circle5 {
+-webkit-transform: rotate(120deg);
+    -ms-transform: rotate(120deg);
+        transform: rotate(120deg); }
+.sk-circle .sk-circle6 {
+-webkit-transform: rotate(150deg);
+    -ms-transform: rotate(150deg);
+        transform: rotate(150deg); }
+.sk-circle .sk-circle7 {
+-webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+        transform: rotate(180deg); }
+.sk-circle .sk-circle8 {
+-webkit-transform: rotate(210deg);
+    -ms-transform: rotate(210deg);
+        transform: rotate(210deg); }
+.sk-circle .sk-circle9 {
+-webkit-transform: rotate(240deg);
+    -ms-transform: rotate(240deg);
+        transform: rotate(240deg); }
+.sk-circle .sk-circle10 {
+-webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+        transform: rotate(270deg); }
+.sk-circle .sk-circle11 {
+-webkit-transform: rotate(300deg);
+    -ms-transform: rotate(300deg);
+        transform: rotate(300deg); }
+.sk-circle .sk-circle12 {
+-webkit-transform: rotate(330deg);
+    -ms-transform: rotate(330deg);
+        transform: rotate(330deg); }
+.sk-circle .sk-circle2:before {
+-webkit-animation-delay: -1.1s;
+        animation-delay: -1.1s; }
+.sk-circle .sk-circle3:before {
+-webkit-animation-delay: -1s;
+        animation-delay: -1s; }
+.sk-circle .sk-circle4:before {
+-webkit-animation-delay: -0.9s;
+        animation-delay: -0.9s; }
+.sk-circle .sk-circle5:before {
+-webkit-animation-delay: -0.8s;
+        animation-delay: -0.8s; }
+.sk-circle .sk-circle6:before {
+-webkit-animation-delay: -0.7s;
+        animation-delay: -0.7s; }
+.sk-circle .sk-circle7:before {
+-webkit-animation-delay: -0.6s;
+        animation-delay: -0.6s; }
+.sk-circle .sk-circle8:before {
+-webkit-animation-delay: -0.5s;
+        animation-delay: -0.5s; }
+.sk-circle .sk-circle9:before {
+-webkit-animation-delay: -0.4s;
+        animation-delay: -0.4s; }
+.sk-circle .sk-circle10:before {
+-webkit-animation-delay: -0.3s;
+        animation-delay: -0.3s; }
+.sk-circle .sk-circle11:before {
+-webkit-animation-delay: -0.2s;
+        animation-delay: -0.2s; }
+.sk-circle .sk-circle12:before {
+-webkit-animation-delay: -0.1s;
+        animation-delay: -0.1s; }
+
+@-webkit-keyframes sk-circleBounceDelay {
+0%, 80%, 100% {
+-webkit-transform: scale(0);
+        transform: scale(0);
+} 40% {
+-webkit-transform: scale(1);
+        transform: scale(1);
+}
+}
+
+@keyframes sk-circleBounceDelay {
+0%, 80%, 100% {
+-webkit-transform: scale(0);
+        transform: scale(0);
+} 40% {
+-webkit-transform: scale(1);
+        transform: scale(1);
+}
+}
